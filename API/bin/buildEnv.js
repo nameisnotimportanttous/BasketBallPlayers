@@ -10,7 +10,6 @@ const createENVFile = (directory, variables) => {
 
 const buildEnv = () => {
   _.each(envVariables, (value, key) => {
-    console.log('this is the value and key', value, key);
     fs.writeFileSync(`./${key}/.env`, '');
     createENVFile(key, value);
   });
