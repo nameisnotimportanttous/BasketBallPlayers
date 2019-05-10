@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildEnv": "node bin/buildEnv.js"
+    "buildEnv": "node bin/buildEnv.js",
+    "setup": "cd client && npm install",
+    "start": "cd client && npm run start"
   },
   "keywords": [],
   "author": "",

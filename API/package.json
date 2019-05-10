@@ -1,0 +1,22 @@
+{
+  "name": "API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "API": "buildEnv.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildEnv": "node bin/buildEnv.js",
+    "setup:rest-server": "cd rest-server && npm install",
+    "start:rest-server": "cd rest-server && npm run start",
+    "start": "npm-run-all -p start:rest-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
