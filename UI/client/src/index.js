@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
+import App from './App.jsx';
 
-const Index = () => {
-  return <div>Hello React???</div>;
-};
-
-ReactDOM.render(<Index />, document.getElementById('app'));
+render(<App />, document.getElementById('app'));
